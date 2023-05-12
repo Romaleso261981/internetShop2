@@ -43,10 +43,16 @@
     background-color: #dfdfdf;
     padding: 60px 0 80px;
   }
+  &__ifo-title{
+    color: $title;
+    @extend %title-font;
+    margin-bottom: 14px;
+    line-height: 23;
+  }
   &__copyright {
     background-color: $title;
     color: #a1a1a1;
     text-align: center;
-    padding: 42px 15px 41px;
+    padding: 42px 0 41px;
   } 
 }
