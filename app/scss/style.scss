@@ -47,29 +47,41 @@
     display: flex;
     justify-content: space-between;
   }
-  &__info{
+  &__info {
     width: 540px;
   }
-  
+
   &__info-title {
     color: $title;
     @extend %title-font;
     margin-bottom: 14px;
     line-height: 23px;
   }
-  &__info-text{
+  &__info-text {
     margin-bottom: 16px;
+    min-width: 475;
   }
 
-  &__info-email{
+  &__info-email {
     font-weight: 600;
     font-style: 14px;
     color: $title;
     margin-bottom: 22px;
     padding-left: 30px;
     display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../images/icon/svg/envelope.svg);
+      position: absolute;
+      left: 8px;
+      top: 5px;
+      width: 16px;
+      height: 12px;
+    }
   }
   &__form {
+    display: flex;
   }
 
   &__form-input {
@@ -78,8 +90,92 @@
     background-color: transparent;
     opacity: 0.7;
     border: 1px solid rgba($title, 0.7);
+    width: 100%;
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-style: 16px;
+      line-height: 27;
+      color: #a1a1a1;
+    }
   }
+
   &__form-button {
+    background-color: $title;
+    border: none;
+    color: #fffff0;
+    border-radius: 21px;
+    font-weight: 600;
+    padding: 6px 12px;
+    min-width: 160px;
+    margin-left: 9px;
+    cursor: pointer;
+  }
+  &__social {
+    width: 125px;
+    margin-right: auto;
+    margin-left: 100px;
+  }
+
+  &__socil-item {
+    padding-left: 28px;
+  }
+
+  &__socil-item,
+  &__menu-item {
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-style: 14px;
+    color: #707070;
+  }
+  &__socil-link,
+  &__menu-link {
+    color: #707070;
+  }
+
+  &__menu {
+    margin-right: 60px;
+    width: 125px;
+  }
+
+  &__socil-link {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__socil-link--facebook::before{
+    background-image: url(../images/icon/svg/facebook.svg);
+    width: 16px;
+      height: 16px;
+      top: 4px;
+  }
+  &__socil-link--instagram::before{
+    background-image: url(../images/icon/svg/instagram.svg);
+    width: 14px;
+      height: 14px;
+  }
+  &__socil-link--Pinterest::before{
+    background-image: url(../images/icon/svg/Pinterest.svg);
+    width: 16px;
+      height: 16px;
+       top: 4px;
+  }
+  &__socil-link--WhatsApp::before{
+    background-image: url(../images/icon/svg/whatsapp.svg);
+    width: 14px;
+      height: 14px;
+  }
+  &__socil-link--Youtube::before{
+    background-image: url(../images/icon/svg/youtube.svg);
+    width: 18px;
+      height: 12px;
   }
 
   &__copyright {
