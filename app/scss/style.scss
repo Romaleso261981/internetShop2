@@ -192,8 +192,12 @@
   bottom: 0;
   padding-top: 40px;
   max-width: 694px;
+  width: 100%;
   background-color: #fff;
   z-index: 1;
+  &.rightsite-menu--close {
+    transform: translateX(+1000%);
+  }
   &__close {
     background-color: transparent;
     border: none;
@@ -203,19 +207,23 @@
   }
   &__content {
     text-align: center;
-    min-width: 485px;
+    max-width: 485px;
     margin: 0 auto;
   }
   &__logo {
     margin-bottom: 40px;
+    display: inline-block;
   }
   &__title {
     color: $title;
-    @extend %title;
-    font-style: 36px;
-    line-height: 51;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
   }
   &__text {
     margin-bottom: 75px;
+  }
+  &__images {
+    max-width: 485px;
   }
 }
