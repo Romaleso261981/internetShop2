@@ -150,32 +150,32 @@
       height: 16px;
     }
   }
-  &__socil-link--facebook::before{
+  &__socil-link--facebook::before {
     background-image: url(../images/icon/svg/facebook.svg);
     width: 16px;
-      height: 16px;
-      top: 4px;
+    height: 16px;
+    top: 4px;
   }
-  &__socil-link--instagram::before{
+  &__socil-link--instagram::before {
     background-image: url(../images/icon/svg/instagram.svg);
     width: 14px;
-      height: 14px;
+    height: 14px;
   }
-  &__socil-link--Pinterest::before{
+  &__socil-link--Pinterest::before {
     background-image: url(../images/icon/svg/Pinterest.svg);
     width: 16px;
-      height: 16px;
-       top: 4px;
+    height: 16px;
+    top: 4px;
   }
-  &__socil-link--WhatsApp::before{
+  &__socil-link--WhatsApp::before {
     background-image: url(../images/icon/svg/whatsapp.svg);
     width: 14px;
-      height: 14px;
+    height: 14px;
   }
-  &__socil-link--Youtube::before{
+  &__socil-link--Youtube::before {
     background-image: url(../images/icon/svg/youtube.svg);
     width: 18px;
-      height: 12px;
+    height: 12px;
   }
 
   &__copyright {
@@ -185,11 +185,37 @@
     padding: 42px 0 41px;
   }
 }
-.rightsite-menu{
+.rightsite-menu {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  min-width: 694px;
+  padding-top: 40px;
+  max-width: 694px;
   background-color: #fff;
+  z-index: 1;
+  &__close {
+    background-color: transparent;
+    border: none;
+    margin-left: 40px;
+    padding: 0;
+    cursor: pointer;
+  }
+  &__content {
+    text-align: center;
+    min-width: 485px;
+    margin: 0 auto;
+  }
+  &__logo {
+    margin-bottom: 40px;
+  }
+  &__title {
+    color: $title;
+    @extend %title;
+    font-style: 36px;
+    line-height: 51;
+  }
+  &__text {
+    margin-bottom: 75px;
+  }
 }
