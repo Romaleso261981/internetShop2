@@ -7,9 +7,10 @@ $(function () {
     $(".rightsite-menu").addClass("rightsite-menu--close");
   });
 
-    $(".top__slider").slick({
-        dots: true,
-        arrows: false,
-        fade: true
+  $(".top__slider").slick({
+    dots: true,
+    arrows: false,
+    fade: true,
+    autoplay: true,
   });
 });
