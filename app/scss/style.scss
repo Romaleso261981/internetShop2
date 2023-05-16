@@ -428,7 +428,7 @@
   }
   &__items-box {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     border-bottom: 2px solid rgba(#363838, 0.7);
     position: relative;
     &::before {
@@ -448,6 +448,7 @@
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    height: 100%;
   }
   &__item--production {
     margin-left: 317px;
@@ -463,7 +464,21 @@
   }
   &__item--consultation,
   &__item--production {
-    padding-bottom: 30px;
+    padding-bottom: 38px;
+  }
+  &__item--measuring {
+    padding-top: 38px;
+    margin-left: 305px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background-color: rgba(#363838, 0.7);
+    }
   }
   &__item-title {
     @extend %title-font;
