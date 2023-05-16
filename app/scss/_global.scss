@@ -26,11 +26,18 @@ body {
   flex: 0 0 auto;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -38,6 +45,7 @@ body {
   li{
     padding: 0 15px;
   }
+  
   button{
     background-color: black;
     border: none;
